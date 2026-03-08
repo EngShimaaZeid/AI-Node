@@ -1,0 +1,16 @@
+clickhouse:
+  host: "http://localhost:8123"
+  database: "alerts_db"
+
+neo4j:
+  uri: "bolt://localhost:7687"
+  user: "neo4j"
+  password: "password"
+
+llm:
+  endpoint: "http://localhost:8000/llm"
+  api_key: "your_api_key"
+
+engine:
+  polling_interval_seconds: 15
+  alert_window_seconds: 60
