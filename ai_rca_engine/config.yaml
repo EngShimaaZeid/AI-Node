@@ -1,12 +1,15 @@
 clickhouse:
-  host: "http://localhost:8123"
-  database: "alerts_db"
+  host: ${CLICKHOUSE_HOST}
+  port: ${CLICKHOUSE_PORT}
+  user: ${CLICKHOUSE_USER}
+  password: ${CLICKHOUSE_PASSWORD}
+  database: ${CLICKHOUSE_DB}
 
 neo4j:
-  uri: "bolt://localhost:7687"
-  user: "neo4j"
-  password: "password"
-
+  uri: ${NEO4J_URI}
+  user: ${NEO4J_USER}
+  password: ${NEO4J_PASSWORD}
+  
 llm:
   endpoint: "http://localhost:8000/llm"
   api_key: "your_api_key"
